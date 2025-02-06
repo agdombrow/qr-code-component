@@ -1,0 +1,91 @@
+/* ================================================================== BASE == */
+
+:root {
+  /* -------------------------------------------------------------- colors -- */
+  --slate-900: hsl(218, 44%, 22%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-300: hsl(212, 45%, 89%);
+  --white: hsl(0, 0%, 100%);
+
+  /* ---------------------------------------------------------- typography -- */
+  --ff-primary: "Outfit", "Open Sans", sans-serif;
+
+  /* ------------------------------------------------------------- spacing -- */
+  --spacing-500: 2.5rem;
+  --spacing-300: 1.5rem;
+  --spacing-100: 1rem;
+}
+
+
+
+
+
+/* ================================================================ RESET == */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+  
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+/* ================================================================ LAYOUT == */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--slate-300);
+}
+
+.card {
+  background-color: var(--white);
+}
+
+footer {
+  /* margin-block-start: auto; */
+  /* position: fixed;
+  bottom: 0;
+  width: 100%; */
+}
+
+
+
+/* ============================================================ TYPOGRAPHY == */
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+
+
+
+
+/* ================================================================= UTILS == */
