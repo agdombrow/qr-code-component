@@ -62,18 +62,17 @@ body {
 }
 
 .card {
-  
+  max-width: 320px;
   padding: var(--spacing-100);
   padding-block-end: var(--spacing-500);
-
   background-color: var(--white);
   border-radius: 20px;
-
   text-align: center;
 }
 
 img {
   margin-block-end: var(--spacing-300);
+  border-radius: 10px;
 }
 
 .attribution {
@@ -85,7 +84,13 @@ img {
   color: var(--slate-300);
   text-align: center;
   font-size: 11px;
+  opacity: 0.25;
+  transition: opacity 0.3s ease;
 }
+
+  .attribution:hover {
+    opacity: 1;
+  }
 
 .attribution a {
   color: inherit;
@@ -98,12 +103,17 @@ img {
 /* ============================================================ TYPOGRAPHY == */
 
 h1 {
+  margin-block-end: var(--spacing-100);
+  padding-inline: var(--spacing-100);
+  color: var(--slate-900);
   font-size: 22px;
   font-weight: bold;
   line-height: 1.2;
 }
 
 p {
+  padding-inline: var(--spacing-100);
+  color: var(--slate-500);
   font-size: 15px;
   line-height: 1.4;
 }
